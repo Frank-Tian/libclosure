@@ -428,6 +428,7 @@
 					"$(DSTROOT)/usr/local/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
+					"$(SRCROOT)/include",
 				);
 				INSTALL_PATH = /usr/lib/system;
 				"INSTALL_PATH[sdk=driverkit*]" = "$(DRIVERKITROOT)/usr/lib/system";
@@ -456,6 +457,7 @@
 				SUPPORTS_TEXT_BASED_API = YES;
 				"SYSTEM_HEADER_SEARCH_PATHS[sdk=driverkit*]" = "$(SDKROOT)/$(DRIVERKITROOT)/Runtime/usr/local/include $(SDKROOT)/$(DRIVERKITROOT)/Runtime/usr/include";
 				TAPI_VERIFY_MODE = ErrorsAndWarnings;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
@@ -468,6 +470,7 @@
 					"$(DSTROOT)/usr/local/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
+					"$(SRCROOT)/include",
 				);
 				INSTALL_PATH = /usr/lib/system;
 				"INSTALL_PATH[sdk=driverkit*]" = "$(DRIVERKITROOT)/usr/lib/system";
@@ -496,6 +499,7 @@
 				SUPPORTS_TEXT_BASED_API = YES;
 				"SYSTEM_HEADER_SEARCH_PATHS[sdk=driverkit*]" = "$(SDKROOT)/$(DRIVERKITROOT)/Runtime/usr/local/include $(SDKROOT)/$(DRIVERKITROOT)/Runtime/usr/include";
 				TAPI_VERIFY_MODE = ErrorsAndWarnings;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};

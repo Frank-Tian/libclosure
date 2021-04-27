@@ -9,7 +9,7 @@
 
 
 #include "Block_private.h"
-#include <platform/string.h>
+//#include <platform/string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
