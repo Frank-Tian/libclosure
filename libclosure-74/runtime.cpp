@@ -9,7 +9,7 @@
 
 
 #include "Block_private.h"
-//#include <platform/string.h>
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -21,7 +21,7 @@
 #define os_assert(_x) os_assert(_x)
 #endif
 
-#define memmove _platform_memmove
+//#define memmove _platform_memmove
 
 #if TARGET_OS_WIN32
 #define _CRT_SECURE_NO_WARNINGS 1
